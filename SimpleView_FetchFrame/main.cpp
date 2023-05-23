@@ -178,10 +178,8 @@ int main(int argc, char* argv[])
     int index = 0;
     int count_pic = 0;
     while (!exit_main) {
-        if (pic_max != -1) {
-            if (count_pic == pic_max) break;
-            count_pic++;
-        }
+		if (count_pic == pic_max) break;
+		count_pic++;
         sprintf(save_left, "D:\\AAAAAAA\\documents\\scitri\\data\\left\\%d.%d.%d %d£º%02d\\", 1900 + p->tm_year, 1 + p->tm_mon, p->tm_mday, p->tm_hour, p->tm_min);
         sprintf(save_depth, "D:\\AAAAAAA\\documents\\scitri\\data\\depth\\%d.%d.%d %d£º%02d\\", 1900 + p->tm_year, 1 + p->tm_mon, p->tm_mday, p->tm_hour, p->tm_min);
         sprintf(save_data, "D:\\AAAAAAA\\documents\\scitri\\data\\data\\%d.%d.%d %d£º%02d\\", 1900 + p->tm_year, 1 + p->tm_mon, p->tm_mday, p->tm_hour, p->tm_min);
